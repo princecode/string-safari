@@ -17,9 +17,10 @@ namespace StringSafari
         public static bool HasBabyZebra(string str)
         {
             // TODO
-            return false;
-        }
 
+            return str.Contains("zebra");
+        }
+       
         /// <summary>
         /// Looks for an adult zebra in <paramref name="str"/>.
         /// <para>An adult zebra is "ZEBRA", all uppercase.</para>
@@ -93,6 +94,8 @@ namespace StringSafari
         {
             // TODO
             return false;
+
+   
         }
     }
 }
