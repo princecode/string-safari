@@ -44,7 +44,7 @@ namespace StringSafari
         {
             // TODO
             return str.ToLower().Contains("zebra");
-            
+                      
             
         }
 
@@ -57,7 +57,19 @@ namespace StringSafari
         public static bool HasADazzle(string str)
         {
             // TODO
-            return false;
+            int firstZebra = str.ToLower().IndexOf("zebra");
+            int lastZebra = str.ToLower().LastIndexOf("zebra");
+
+            if (firstZebra == lastZebra)
+            {
+                // only one zebra!
+                return false;
+            }
+            else
+            {
+                // at least two zebras
+                return true;
+            }
         }
 
         /// <summary>
