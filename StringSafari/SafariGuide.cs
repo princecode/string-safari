@@ -82,7 +82,20 @@ namespace StringSafari
         public static bool HasAPride(string str)
         {
             // TODO
-            return false;
+            string newString = str.ToLower();
+            int firstLion = newString.IndexOf("lion");
+            int lastLion = newString.LastIndexOf("lion");
+
+            if (firstLion == lastLion)
+            {
+                // only one or zero lions!
+                return false;
+            }
+            else
+            {
+                // at least two lions
+                return true;
+            }
         }
 
         /// <summary>
