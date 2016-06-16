@@ -107,7 +107,25 @@ namespace StringSafari
         public static bool ThereWillBeBlood(string str)
         {
             // TODO
-            return false;
+            if (HasAPride(str))
+            {
+                if (HasADazzle(str))
+                {
+                    return false;
+                }
+                else if (HasZebra(str))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
