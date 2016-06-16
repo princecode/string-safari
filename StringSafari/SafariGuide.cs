@@ -43,8 +43,9 @@ namespace StringSafari
         public static bool HasZebra(string str)
         {
             // TODO
-
-            return false;
+            return str.ToLower().Contains("zebra");
+            
+            
         }
 
         /// <summary>
