@@ -30,7 +30,7 @@ namespace StringSafari
         public static bool HasAdultZebra(string str)
         {
             // TODO
-            return false;
+            return str.Contains("ZEBRA");
         }
 
         /// <summary>
